@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PortafolioApp</string>
+
+    <!-- Navegación -->
+    <string name="nav_perfil">Perfil</string>
+    <string name="nav_fotos">Fotos</string>
+    <string name="nav_video">Video</string>
+    <string name="nav_web">Web</string>
+    <string name="nav_botones">Botones</string>
+
+    <!-- Perfil -->
+    <string name="perfil_nombre">Mateo Moncada Moncada</string>
+    <string name="perfil_titulo">Ingeniero de Software</string>
+    <string name="perfil_estudios_titulo">Estudios</string>
+    <string name="perfil_estudios">
+        • Especialización en Herramientas de Programación Móvil — Politécnico Grancolombiano (2024–2025)\n
+        • Ingeniería de Sistemas — Universidad Nacional de Colombia (2018–2023)\n
+        • Bachillerato Técnico en Informática — INEM Santiago Pérez (2012–2017)
+    </string>
+    <string name="perfil_experiencia_titulo">Experiencia Profesional</string>
+    <string name="perfil_experiencia">
+        • Desarrollador Android Junior — TechColombia S.A.S (2023–Presente)\n
+          Desarrollo de aplicaciones móviles nativas en Java y Kotlin.\n\n
+        • Practicante de Desarrollo — Softpymes (2022–2023)\n
+          Soporte y mantenimiento de módulos ERP en Java.\n\n
+        • Monitor de Programación — Universidad Nacional (2021–2022)\n
+          Asesoría a estudiantes en algoritmos y estructuras de datos.
+    </string>
+    <string name="perfil_habilidades_titulo">Habilidades</string>
+    <string name="perfil_habilidades">Java • Kotlin • Android Studio • XML • Git • SQL • Firebase • REST APIs</string>
+    <string name="perfil_contacto_titulo">Contacto</string>
+    <string name="perfil_email">mateo.moncada@email.com</string>
+    <string name="perfil_telefono">+57 310 555 1234</string>
+    <string name="perfil_ciudad">Bogotá, Colombia</string>
+
+    <!-- Fotos -->
+    <string name="fotos_titulo">Galería de Proyectos</string>
+
+    <!-- Video -->
+    <string name="video_titulo">Video de Presentación</string>
+    <string name="video_descripcion">Presentación profesional — Portafolio 2024</string>
+
+    <!-- Web -->
+    <string name="web_titulo">Navegador Web</string>
+    <string name="web_hint">Ingrese una URL (ej: https://www.google.com)</string>
+    <string name="web_btn_ir">IR</string>
+    <string name="web_btn_atras">←</string>
+    <string name="web_btn_adelante">→</string>
+    <string name="web_btn_recargar">↺</string>
+
+    <!-- Botones -->
+    <string name="botones_titulo">Acciones Rápidas</string>
+    <string name="btn_compartir">Compartir Perfil</string>
+    <string name="btn_contactar">Contactar</string>
+    <string name="btn_descargar">Descargar CV</string>
+    <string name="btn_linkedin">Ver LinkedIn</string>
+    <string name="btn_github">Ver GitHub</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="resultado_label">Resultado:</string>
+    <string name="resultado_default">Presione un botón para ver su acción</string>
+</resources>

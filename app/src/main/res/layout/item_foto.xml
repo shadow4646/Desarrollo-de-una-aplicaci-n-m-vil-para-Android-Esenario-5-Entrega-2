@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorCardBackground"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    android:elevation="2dp">
+
+    <!-- Imagen del proyecto -->
+    <ImageView
+        android:id="@+id/iv_foto_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_imagen"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del proyecto"/>
+
+    <!-- Título del proyecto -->
+    <TextView
+        android:id="@+id/tv_foto_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título del proyecto"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <!-- Categoría -->
+    <TextView
+        android:id="@+id/tv_foto_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoría"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

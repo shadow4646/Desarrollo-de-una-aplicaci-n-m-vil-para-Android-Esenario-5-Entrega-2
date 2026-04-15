@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorNavBackground"
+    android:padding="8dp">
+
+    <!-- Logo / Título de la app -->
+    <TextView
+        android:id="@+id/tv_app_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Portafolio"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Línea separadora -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón: Perfil -->
+    <Button
+        android:id="@+id/btn_nav_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤  Perfil"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:padding="12dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/colorNavSelected"
+        android:drawablePadding="8dp"/>
+
+    <!-- Botón: Fotos -->
+    <Button
+        android:id="@+id/btn_nav_fotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🖼  Fotos"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:padding="12dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <!-- Botón: Video -->
+    <Button
+        android:id="@+id/btn_nav_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶  Video"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:padding="12dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <!-- Botón: Web -->
+    <Button
+        android:id="@+id/btn_nav_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌐  Web"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:padding="12dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <!-- Botón: Botones -->
+    <Button
+        android:id="@+id/btn_nav_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚡  Botones"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:padding="12dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <!-- Espacio flexible -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Versión de la app -->
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="v1.0 — 2024"
+        android:textColor="#80FFFFFF"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>

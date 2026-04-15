@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorContentBackground">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/tv_botones_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botones_titulo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:padding="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ============================================================ -->
+            <!-- 1. Button — Botón estándar -->
+            <!-- ============================================================ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Button (botón estándar)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/btn_compartir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Compartir"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginEnd="6dp"/>
+
+                <Button
+                    android:id="@+id/btn_contactar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contactar"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorSuccess"/>
+
+            </LinearLayout>
+
+            <!-- ============================================================ -->
+            <!-- 2. ToggleButton -->
+            <!-- ============================================================ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. ToggleButton (activar/desactivar)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ToggleButton
+                    android:id="@+id/toggle_notificaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="Notif. ON"
+                    android:textOff="Notif. OFF"
+                    android:checked="false"
+                    android:layout_marginEnd="12dp"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_modo_oscuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="Oscuro ON"
+                    android:textOff="Oscuro OFF"
+                    android:checked="false"/>
+
+            </LinearLayout>
+
+            <!-- ============================================================ -->
+            <!-- 3. RadioButton -->
+            <!-- ============================================================ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. RadioButton (selección única)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_disponibilidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/rb_disponible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disponible"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    android:layout_marginEnd="12dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_ocupado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ocupado"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="12dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_freelance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freelance"
+                    android:textSize="12sp"/>
+
+            </RadioGroup>
+
+            <!-- ============================================================ -->
+            <!-- 4. CheckBox -->
+            <!-- ============================================================ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. CheckBox (selección múltiple)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <CheckBox
+                    android:id="@+id/cb_java"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Java"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    android:layout_marginEnd="8dp"/>
+
+                <CheckBox
+                    android:id="@+id/cb_kotlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    android:layout_marginEnd="8dp"/>
+
+                <CheckBox
+                    android:id="@+id/cb_python"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Python"
+                    android:textSize="12sp"
+                    android:checked="false"/>
+
+            </LinearLayout>
+
+            <!-- ============================================================ -->
+            <!-- 5. Switch -->
+            <!-- ============================================================ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Switch (interruptor)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <Switch
+                    android:id="@+id/sw_portafolio_publico"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Portafolio público"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    android:layout_marginEnd="8dp"/>
+
+                <Switch
+                    android:id="@+id/sw_contacto_directo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contacto directo"
+                    android:textSize="12sp"
+                    android:checked="false"/>
+
+            </LinearLayout>
+
+            <!-- ============================================================ -->
+            <!-- 6. Botones de acción adicionales -->
+            <!-- ============================================================ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/btn_descargar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Descargar CV"
+                    android:textSize="11sp"
+                    android:backgroundTint="@color/colorWarning"
+                    android:layout_marginEnd="4dp"/>
+
+                <Button
+                    android:id="@+id/btn_limpiar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Limpiar"
+                    android:textSize="11sp"
+                    android:backgroundTint="@color/colorError"/>
+
+            </LinearLayout>
+
+            <!-- Panel de resultado -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado:"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="11sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presione un control para ver su acción"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp"
+                android:background="@color/colorCardBackground"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:minHeight="50dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
